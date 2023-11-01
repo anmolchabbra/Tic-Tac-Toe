@@ -1,10 +1,59 @@
-.square {
-    width: 33px;
-    height: 33px;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    text-align: center;
-    display: inline-block;
-    box-sizing: border-box;
-}
+/* CSS for the Tic-Tac-Toe game */
+
+/* Game container */
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Game board */
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  
+  /* Status */
+  .status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Board rows */
+  .board-row {
+    display: flex;
+  }
+  
+  /* Square buttons */
+  .square {
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .square:hover {
+    background-color: #eee;
+  }
+  
+  /* Winning squares */
+  .winner {
+    background-color: #a0e8a0;
+    transition: background-color 0.5s;
+  }
+  
